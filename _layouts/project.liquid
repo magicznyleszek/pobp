@@ -1,0 +1,25 @@
+{% include appSetup/templateStart.liquid %}
+
+{% include modules/pageHeader.liquid %}
+
+<section role="main">
+    <header i-pagetitle>
+        <h1 i-pagetitle-name>{{ page.title }}</h1>
+
+        <p i-pagetitle-description>{{ page.description }}</p>
+
+        <time i-pagetitle-meta datetime="{{ page.date }}">
+            {{ page.date | date: "%B %Y" }}
+        </time>
+    </header>
+
+    <section i-projectContent>
+        {{ content }}
+    </section>
+
+    {% include modules/relateds.liquid older=page.previous newer=page.next %}
+</section>
+
+{% include modules/pageFooter.liquid %}
+
+{% include appSetup/templateEnd.liquid %}
