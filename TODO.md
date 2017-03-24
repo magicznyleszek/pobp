@@ -2,28 +2,44 @@
 
 Redesign i przygotowanie trzech oddzielnych sekcji strony; odświeżenie identyfikacji wizualnej.
 
+## architecture v2
+
+urls:
+
+- /
+- /pl/zabytki
+    - /pl/zabytki/obiekt-zabytkowy-1
+    - /pl/zabytki/obiekt-zabytkowy-2
+- /projekty
+    - /projekty/obiekt-1
+    - /projekty/obiekt-2
+- /kajaki
+    - /kajaki/wyprawa-1
+    - /kajaki/wyprawa-2
+
 ## architecture
 
 Use collections instead of posts http://jekyllrb.com/docs/collections/
+https://www.sylvaindurand.org/making-jekyll-multilingual/
 
 - root page
     - language select (optional, bold/hide current)
-	    - english
-	    - polski
-	    - deutsch
+        - english
+        - polski
+        - deutsch
     - category select (bold current)
     - content
-	    - featured project (root)
-	    - selected project
-	    - category listing
-	    - contact
-	    - offer
-	- contact
-	- offer + short about
-	- other places select (bold/hide current)
-		- zabytki
-		- projekty w polsce
-		- kajaki
+        - featured project (root)
+        - selected project
+        - category listing
+        - contact
+        - offer
+    - contact
+    - offer + short about
+    - other places select (bold/hide current)
+        - zabytki
+        - projekty w polsce
+        - kajaki
 
 ## brief - strona 1: zabytki
 
