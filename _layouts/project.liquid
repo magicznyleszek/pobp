@@ -1,7 +1,5 @@
 {% include appSetup/templateStart.liquid %}
 
-{% include modules/pageHeader.liquid %}
-
 <section role="main">
     <header i-pagetitle>
         <h1 i-pagetitle-name>{{ page.title }}</h1>
@@ -19,7 +17,5 @@
 
     {% include modules/relateds.liquid older=page.previous newer=page.next %}
 </section>
-
-{% include modules/pageFooter.liquid %}
 
 {% include appSetup/templateEnd.liquid %}
