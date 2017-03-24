@@ -38,3 +38,40 @@ exclude:
     - README.md
     - package.json
 
+# ------------------------------------------------------------------------------
+# page categories and custom collections
+# ------------------------------------------------------------------------------
+
+collections:
+    content_kajaki:
+        output: true
+        category: kajaki
+        permalink: /kajaki/:path/
+    content_projekty:
+        output: true
+        category: projekty
+        permalink: /projekty/:path/
+    content_zabytki:
+        output: true
+        category: zabytki
+        languages:
+            - de
+            - en
+            - pl
+        permalink: /zabytki/:path/
+defaults:
+    - scope:
+        path: ''
+        type: content_kajaki
+      values:
+        layout: project
+    - scope:
+        path: ''
+        type: content_zabytki
+      values:
+        layout: project
+    - scope:
+        path: ''
+        type: content_projekty
+      values:
+        layout: project

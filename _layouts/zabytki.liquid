@@ -1,0 +1,20 @@
+{% include appSetup/templateStart.liquid %}
+
+{% include modules/pageHeader.liquid %}
+
+<section role="main">
+
+    {% include trans slug='building' %}
+
+    {% assign zabytki=site.content_zabytki | where:"language", page.language %}
+
+    {% for item in zabytki %}
+        <div>{{ item.title }}</div>
+        <div>{{ item.url }}</div>
+    {% endfor %}
+
+</section>
+
+{% include modules/pageFooter.liquid %}
+
+{% include appSetup/templateEnd.liquid %}
