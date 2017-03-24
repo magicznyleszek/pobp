@@ -1,1 +1,5 @@
+{% if include.language %}
+{{ site.data.translations[include.language].[include.slug] }}
+{% else %}
 {{ site.data.translations[page.language].[include.slug] }}
+{% endif %}
