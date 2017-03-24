@@ -52,7 +52,7 @@ Wymagania:
 Cel:
 - przedstawicielstwo producentów materiałów dot. zabytków za granicą
 
-## brief - strona 2: projekty polskie
+## brief - strona 2: pozostałe projekty
 
 Wymagania:
 - CMS
