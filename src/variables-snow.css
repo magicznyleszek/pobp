@@ -4,6 +4,8 @@ app styles aggregation
 
 :root {
     --c-root-txt: var(--c-bokaraGray);
+    --c-root-weak: var(--c-timberWolf);
     --c-root-bg: var(--c-white);
-    --c-root-accent: var(--c-persianBlue);
+    --c-root-accentOne: var(--c-persianBlue);
+    --c-root-accentTwo: var(--c-goldenrod);
 }

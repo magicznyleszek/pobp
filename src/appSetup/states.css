@@ -7,11 +7,11 @@ user-action influenced states
     --line-gr-solid-c: currentColor 0%, currentColor 0%;
     --line-gr: linear-gradient(to left, var(--line-gr-solid-c));
 
-    --focus-outline-c: var(--c-root-accent);
+    --focus-outline-c: var(--c-root-accentOne);
     --focus-outline-w: 0.25rem;
 
     --selection-txt-c: var(--c-root-bg);
-    --selection-bg-c: var(--c-root-accent);
+    --selection-bg-c: var(--c-root-accentOne);
 
     --disabled-o: 0.5;
 }
@@ -39,7 +39,7 @@ a:hover {
 
 a:visited { color: inherit; }
 
-a:active { color: var(--c-root-accent); }
+a:active { color: var(--c-root-accentOne); }
 
 /* text selection */
 
