@@ -6,6 +6,6 @@ app styles aggregation
     --c-root-txt: var(--c-white);
     --c-root-weak: var(--c-timberWolf);
     --c-root-bg: var(--c-persianBlue);
-    --c-root-accentOne: var(--c-goldenrod);
-    --c-root-accentTwo: var(--c-goldenrod);
+    --c-root-primary: var(--c-goldenrod);
+    --c-root-secondary: var(--c-goldenrod);
 }
