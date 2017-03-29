@@ -4,6 +4,7 @@ app styles aggregation
 
 /* variables palette */
 @import "variables.css";
+@import "variables-wolf.css";
 
 /* basics */
 @import "appSetup/reset.css";

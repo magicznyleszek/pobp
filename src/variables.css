@@ -4,11 +4,11 @@ variables - all global and pallete variables for project
 
 :root {
     /* colors palette */
-    --c-amaranth: hsl(348, 96%, 55%);
-    --c-gold: hsl(51, 100%, 50%);
+    --c-persianBlue: hsl(218, 66%, 36%);
+    --c-goldenrod: hsl(44, 100%, 38%);
+    --c-bokaraGray: hsl(40, 4%, 15%);
+    --c-timberWolf: hsl(45, 10%, 84%);
     --c-white: hsl(0, 0%, 100%);
-    --c-silver: hsl(0, 0%, 80%);
-    --c-charcoal: hsl(0, 0%, 20%);
 
     /* font families palette */
     --font-sansSerif:
@@ -38,11 +38,6 @@ variables - all global and pallete variables for project
         "Liberation Mono",
         "DejaVu Sans Mono",
         monospace;
-
-    /* base */
-    --c-root-txt: var(--c-charcoal);
-    --c-root-bg: var(--c-white);
-    --s-root-content: 40rem; /* 640px @ 16px */
 
     /* root typography */
     --root-fontWeight: 400;

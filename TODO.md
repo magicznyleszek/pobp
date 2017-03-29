@@ -4,6 +4,9 @@ Redesign i przygotowanie trzech oddzielnych sekcji strony; odświeżenie identyf
 
 ## architecture v2
 
+Color themes in cssnext:
+https://cloudfour.com/thinks/building-themes-with-css4-color-features/
+
 urls:
 
 - /
@@ -20,6 +23,7 @@ urls:
 ## architecture
 
 Use collections instead of posts http://jekyllrb.com/docs/collections/
+
 https://www.sylvaindurand.org/making-jekyll-multilingual/
 
 - root page

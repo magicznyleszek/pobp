@@ -65,13 +65,16 @@ defaults:
         type: content_kajaki
       values:
         layout: project
+        theme: persian
     - scope:
         path: ''
         type: content_zabytki
       values:
         layout: project
+        theme: wolf
     - scope:
         path: ''
         type: content_projekty
       values:
         layout: project
+        theme: snow
