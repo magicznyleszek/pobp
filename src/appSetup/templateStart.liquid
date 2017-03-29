@@ -1,5 +1,13 @@
 {% assign versionCache = site.time|date: "%Y-%m-%d_%H-%M-%S" %}
 
+{% if page.category == 'kajaki'%}
+    {% assign themeName = 'persian' %}
+{% elsif page.category == 'zabytki' %}
+    {% assign themeName = 'wolf' %}
+{% else %}
+    {% assign themeName = 'snow' %}
+{% endif %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +35,7 @@
 
     <!-- style & viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/{{ page.theme }}.css?{{ versionCache }}" media="all" rel="stylesheet">
+    <link href="/dist/{{ themeName }}.css?{{ versionCache }}" media="all" rel="stylesheet">
 
     <!-- icons -->
     <link rel="icon" href="/favicon.ico?{{ versionCache }}">
@@ -40,3 +48,5 @@
 <body>
     <!-- SVG symbols for <use> tags -->
     <div style="display:none;">{% include _symbolsMerged.svg %}</div>
+
+    {% include modules/pageLogo.liquid %}

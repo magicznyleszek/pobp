@@ -1,0 +1,11 @@
+{% if page.category == 'kajaki'%}
+    {% assign logoType = 'kayak' %}
+{% elsif page.category == 'zabytki' %}
+    {% assign logoType = 'antique' %}
+{% else %}
+    {% assign logoType = 'base' %}
+{% endif %}
+
+<a href="{{ site.baseurl }}/">
+    <svg><use xlink:href="#symbol-pobp-logo-{{ logoType }}"></svg>
+</a>

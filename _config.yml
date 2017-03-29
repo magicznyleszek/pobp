@@ -45,19 +45,12 @@ exclude:
 collections:
     content_kajaki:
         output: true
-        category: kajaki
         permalink: /kajaki/:path/
     content_projekty:
         output: true
-        category: projekty
         permalink: /projekty/:path/
     content_zabytki:
         output: true
-        category: zabytki
-        languages:
-            - de
-            - en
-            - pl
         permalink: /zabytki/:path/
 defaults:
     - scope:
@@ -65,16 +58,20 @@ defaults:
         type: content_kajaki
       values:
         layout: project
-        theme: persian
+        category: kajaki
     - scope:
         path: ''
         type: content_zabytki
       values:
         layout: project
-        theme: wolf
+        category: zabytki
+        languages:
+            - de
+            - en
+            - pl
     - scope:
         path: ''
         type: content_projekty
       values:
         layout: project
-        theme: snow
+        category: projekty
