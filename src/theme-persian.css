@@ -1,15 +1,11 @@
 /*******************************************************************************
-app styles aggregation
+persian theme aggregator
 *******************************************************************************/
 
-/* variables palette */
-@import "variables.css";
+@import "variables-common.css";
 @import "variables-persian.css";
+@import "theme-common.css";
 
-/* basics */
-@import "appSetup/reset.css";
-@import "appSetup/root.css";
-@import "appSetup/states.css";
-
-/* modules */
-/*@import "common/area.css";*/
+html {
+    background-image: linear-gradient(to bottom, transparent, var(--c-bokaraGray));
+}

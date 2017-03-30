@@ -1,0 +1,15 @@
+[i-mainMenu] {
+
+}
+
+[i-mainMenu-logo] {
+    display: inline-block;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+[i-mainMenu-logo] svg {
+    margin: 0.25rem;
+    width: 4rem;
+    height: 4rem;
+}

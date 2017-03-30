@@ -16,3 +16,9 @@ a simple reset
     font-style: inherit;
     font-weight: inherit;
 }
+
+svg {
+    color: inherit;
+    shape-rendering: geometricPrecision;
+    fill: currentColor;
+}

@@ -1,15 +1,7 @@
 /*******************************************************************************
-app styles aggregation
+wolf theme aggregator
 *******************************************************************************/
 
-/* variables palette */
-@import "variables.css";
+@import "variables-common.css";
 @import "variables-wolf.css";
-
-/* basics */
-@import "appSetup/reset.css";
-@import "appSetup/root.css";
-@import "appSetup/states.css";
-
-/* modules */
-/*@import "common/area.css";*/
+@import "theme-common.css";

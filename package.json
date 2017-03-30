@@ -31,7 +31,7 @@
   "watch": {
     "styles:build": {
       "patterns": [
-        "src/styles"
+        "src"
       ],
       "extensions": "css",
       "quiet": false

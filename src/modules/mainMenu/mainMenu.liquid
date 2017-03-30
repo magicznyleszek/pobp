@@ -6,6 +6,8 @@
     {% assign logoType = 'base' %}
 {% endif %}
 
-<a href="{{ site.baseurl }}/">
-    <svg><use xlink:href="#symbol-pobp-logo-{{ logoType }}"></svg>
-</a>
+<menu i-mainMenu>
+    <a i-mainMenu-logo href="{{ site.baseurl }}/">
+        <svg><use xlink:href="#symbol-pobp-logo-{{ logoType }}"></svg>
+    </a>
+</menu>
