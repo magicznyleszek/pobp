@@ -1,15 +1,37 @@
+/*******************************************************************************
+mainMenu module
+*******************************************************************************/
+
+:root {
+    --mainMenu-sh: inset 0 0 0 1px var(--c-root-txt), 0 0 0 1px var(--c-root-txt);
+}
+
 [i-mainMenu] {
-
+    position: fixed;
+    /* because of ther borders */
+    bottom: 1px;
+    right: 1px;
+    box-shadow: var(--mainMenu-sh);
 }
 
-[i-mainMenu-logo] {
-    display: inline-block;
-    width: 4.5rem;
-    height: 4.5rem;
+[i-mainMenu] a {
+    text-decoration: none;
 }
 
-[i-mainMenu-logo] svg {
-    margin: 0.25rem;
+[i-mainMenu-item] {
+    display: block;
+    overflow: hidden;
+    padding: 0.25rem;
+    box-shadow: var(--mainMenu-sh);
+}
+
+[i-mainMenu-item~="logo"] {
+    float: left;
     width: 4rem;
     height: 4rem;
+}
+
+[i-mainMenu-item~="logo"] svg {
+    width: 100%;
+    height: 100%;
 }

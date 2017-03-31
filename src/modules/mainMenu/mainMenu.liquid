@@ -7,7 +7,25 @@
 {% endif %}
 
 <menu i-mainMenu>
-    <a i-mainMenu-logo href="{{ site.baseurl }}/">
+    <a i-mainMenu-item="logo" href="{{ site.baseurl }}/">
         <svg><use xlink:href="#symbol-pobp-logo-{{ logoType }}"></svg>
     </a>
+
+    <a i-mainMenu-item href="{{ site.baseUrl }}/kajaki/">Kajaki</a>
+
+    <a i-mainMenu-item href="{{ site.baseUrl }}/projekty/">Projekty</a>
+
+    <div i-mainMenu-item>
+        <a href="{{ site.baseUrl }}/zabytki/de/">
+            {% include trans slug='monuments' language='de' %}
+        </a>
+        /
+        <a href="{{ site.baseUrl }}/zabytki/en/">
+            {% include trans slug='monuments' language='en' %}
+        </a>
+        /
+        <a href="{{ site.baseUrl }}/zabytki/pl/">
+            {% include trans slug='monuments' language='pl' %}
+        </a>
+    </div>
 </menu>
