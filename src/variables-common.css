@@ -4,11 +4,11 @@ variables - all global and pallete variables for project
 
 :root {
     /* colors palette */
-    --c-persianBlue: rgb(31, 76, 152);
-    --c-goldenrod: rgb(194, 142, 0);
-    --c-bokaraGray: rgb(40, 39, 37);
-    --c-timberWolf: rgb(218, 216, 210);
-    --c-white: rgb(255, 255, 255);
+    --c-persianBlue: hsl(218, 66%, 36%);
+    --c-goldenrod: hsl(44, 100%, 38%);
+    --c-bokaraGray: hsl(40, 4%, 15%);
+    --c-timberWolf: hsl(45, 10%, 84%);
+    --c-white: hsl(0, 0%, 100%);
 
     /* font families palette */
     --font-sansSerif:
