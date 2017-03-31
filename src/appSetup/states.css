@@ -2,16 +2,6 @@
 user-action influenced states
 *******************************************************************************/
 
-:root {
-    --focus-outline-c: var(--c-root-primary);
-    --focus-outline-w: 0.25rem;
-
-    --selection-txt-c: var(--c-root-bg);
-    --selection-bg-c: var(--c-root-primary);
-
-    --disabled-o: 0.5;
-}
-
 /* links */
 
 a {
@@ -21,29 +11,32 @@ a {
 
 a:hover { color: var(--c-root-primary); }
 
-/*a:active { color: color(var(--c-root-primary) blend(var(--c-root-bg) 20%)); }*/
-a:active { color: var(--c-root-secondary); }
+/*
+waiting for https://github.com/ianstormtaylor/css-color-function/issues/24
+a:active { color: color(var(--c-root-primary) blend(var(--c-root-bg) 20%)); }
+*/
+a:active { color: color(var(--c-root-primary) a(- 20%)); }
 
 /* text selection */
 
 :focus {
-    outline-color: var(--focus-outline-c);
+    outline-color: var(--c-root-primary);
     outline-style: auto;
-    outline-width: var(--focus-outline-w);
+    outline-width: 0.25rem;
 }
 
 ::-moz-focus-inner { border: 0; }
 
 ::selection {
-    background-color: var(--selection-bg-c);
-    color: var(--selection-txt-c);
+    background-color: var(--c-root-secondary);
+    color: var(--c-root-bg);
 }
 
 /* disabled elements */
 
 [disabled] {
     pointer-events: none;
-    opacity: var(--disabled-o);
+    opacity: 0.5;
 
     /* avoid adding up opacity on nested disabled elements */
     [disabled] { opacity: 1; }
