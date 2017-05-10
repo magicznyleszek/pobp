@@ -2,16 +2,11 @@
 mainMenu module
 *******************************************************************************/
 
-:root {
-    --mainMenu-sh: inset 0 0 0 1px var(--c-root-txt), 0 0 0 1px var(--c-root-txt);
-}
-
 [i-mainMenu] {
     position: fixed;
-    /* because of ther borders */
-    bottom: 1px;
-    right: 1px;
-    box-shadow: var(--mainMenu-sh);
+    bottom: var(--s-leading);
+    right: var(--s-leading);
+    box-shadow: var(--global-sh);
 }
 
 [i-mainMenu] a {
@@ -22,7 +17,7 @@ mainMenu module
     display: block;
     overflow: hidden;
     padding: 0.25rem;
-    box-shadow: var(--mainMenu-sh);
+    box-shadow: var(--global-sh);
 }
 
 [i-mainMenu-item~="logo"] {

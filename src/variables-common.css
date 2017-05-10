@@ -54,6 +54,7 @@ variables - all global and pallete variables for project
 
     /* globals */
     --s-global-br: 0.125rem;
+    --global-sh: inset 0 0 0 1px var(--c-root-txt), 0 0 0 1px var(--c-root-txt);
 }
 
 /*******************************************************************************
