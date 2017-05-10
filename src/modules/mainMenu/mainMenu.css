@@ -6,7 +6,6 @@ mainMenu module
     position: fixed;
     bottom: var(--s-leading);
     right: var(--s-leading);
-    background-color: var(--c-root-bg);
     box-shadow: var(--global-sh);
 }
 
