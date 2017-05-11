@@ -1,3 +1,6 @@
+{% comment %}
+    choose proper SVG logo for given category
+{% endcomment %}
 {% if page.category == 'kajaki'%}
     {% assign logoType = 'kayak' %}
 {% elsif page.category == 'zabytki' %}
@@ -23,6 +26,9 @@
         </span>
     </a>
 
+    {% comment %}
+        we display all three possible languages for zabytki
+    {% endcomment %}
     <div i-mainMenu-item>
         <a
             href="{{ site.baseUrl }}/zabytki/de/"
