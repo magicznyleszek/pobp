@@ -3,5 +3,5 @@ mainContent module
 *******************************************************************************/
 
 [i-mainContent] {
-    padding: var(--s-leading);
+    padding: var(--s-leadingDouble);
 }

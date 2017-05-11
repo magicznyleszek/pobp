@@ -15,8 +15,8 @@ mainMenu module
 @media (--mediumAndBigger) {
     [i-mainMenu] {
         float: right;
-        margin-left: calc(var(--s-leading) * 2);
-        margin-bottom: calc(var(--s-leading) * 2);
+        margin-left: var(--s-leadingDouble);
+        margin-bottom: var(--s-leadingDouble);
     }
 }
 
@@ -51,4 +51,8 @@ mainMenu items
 [i-mainMenu-item~="logo"] svg {
     width: 100%;
     height: 100%;
+}
+
+[i-mainMenu-itemLabel~="selected"] {
+    font-weight: 700;
 }

@@ -11,20 +11,41 @@
         <svg><use xlink:href="#symbol-pobp-logo-{{ logoType }}"></svg>
     </a>
 
-    <a i-mainMenu-item href="{{ site.baseUrl }}/kajaki/">Kajaki</a>
+    <a i-mainMenu-item href="{{ site.baseUrl }}/kajaki/">
+        <span i-mainMenu-itemLabel="{% if page.category == 'kajaki' %}selected{% endif %}">
+            Kajaki
+        </span>
+    </a>
 
-    <a i-mainMenu-item href="{{ site.baseUrl }}/projekty/">Projekty</a>
+    <a i-mainMenu-item href="{{ site.baseUrl }}/projekty/">
+        <span i-mainMenu-itemLabel="{% if page.category == 'projekty' %}selected{% endif %}">
+            Projekty
+        </span>
+    </a>
 
     <div i-mainMenu-item>
-        <a href="{{ site.baseUrl }}/zabytki/de/">
+        <a
+            href="{{ site.baseUrl }}/zabytki/de/"
+            i-mainMenu-itemLabel="{% if page.category == 'zabytki' and page.language == 'de' %}selected{% endif %}"
+        >
             {% include trans slug='monuments' language='de' %}
         </a>
+
         /
-        <a href="{{ site.baseUrl }}/zabytki/en/">
+
+        <a
+            href="{{ site.baseUrl }}/zabytki/en/"
+            i-mainMenu-itemLabel="{% if page.category == 'zabytki' and page.language == 'en' %}selected{% endif %}"
+        >
             {% include trans slug='monuments' language='en' %}
         </a>
+
         /
-        <a href="{{ site.baseUrl }}/zabytki/pl/">
+
+        <a
+            href="{{ site.baseUrl }}/zabytki/pl/"
+            i-mainMenu-itemLabel="{% if page.category == 'zabytki' and page.language == 'pl' %}selected{% endif %}"
+        >
             {% include trans slug='monuments' language='pl' %}
         </a>
     </div>
