@@ -2,10 +2,32 @@
 mainMenu module
 *******************************************************************************/
 
+:root {
+    --z-mainMenu-menu: 2;
+    --z-mainMenu-frame: 1;
+}
+
 [i-mainMenu] {
     position: fixed;
+    z-index: var(--z-mainMenu-menu);
     bottom: var(--s-leading);
     right: var(--s-leading);
+    box-shadow: var(--global-sh);
+}
+
+[i-mainMenu]::after {
+    content: "";
+    pointer-events: none;
+    position: fixed;
+    z-index: var(--z-mainMenu-frame);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: var(--s-leading);
+    padding: var(--s-leading);
     box-shadow: var(--global-sh);
 }
 
