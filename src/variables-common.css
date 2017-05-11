@@ -64,4 +64,5 @@ custom media queries and selectors shortcuts
 /* media queries for scaling everything */
 @custom-media --bigger (min-width: 1536px);
 @custom-media --medium (min-width: 721px) and (max-width: 1535px);
+@custom-media --mediumAndBigger (min-width: 721px);
 @custom-media --smaller (max-width: 720px);

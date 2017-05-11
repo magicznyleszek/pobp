@@ -9,3 +9,4 @@ styles common for all themes
 
 /* modules */
 @import "modules/mainMenu/mainMenu.css";
+@import "modules/mainContent.css";

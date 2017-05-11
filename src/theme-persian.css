@@ -7,5 +7,5 @@ persian theme aggregator
 @import "theme-common.css";
 
 html {
-    background-image: linear-gradient(to bottom, transparent, var(--c-bokaraGray));
+    background-image: linear-gradient(to top, transparent, var(--c-bokaraGray));
 }

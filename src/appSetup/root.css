@@ -28,5 +28,6 @@ html {
 @media (--smaller) { html { font-size: var(--root-fontSize-smaller); } }
 
 body {
-    padding: calc(var(--s-leading) * 2);
+    margin: var(--s-leading);
+    box-shadow: var(--global-sh);
 }
