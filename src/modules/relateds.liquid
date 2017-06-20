@@ -4,7 +4,7 @@
     @param newer - comes from page.next
 {% endcomment %}
 <section i-pagesection="short">
-    {% if include.older %}
+    {% if include.older and include.older.language == page.language %}
         <a i-projectrelated="previous" href="{{ include.older.url }}">
             <span i-projectrelated-subtitle>previous:</span>
 
@@ -16,7 +16,7 @@
         </a>
     {% endif %}
 
-    {% if include.newer %}
+    {% if include.newer and include.newer.language == page.language %}
         <a i-projectrelated="next" href="{{ include.newer.url }}">
             <span i-projectrelated-subtitle>next:</span>
 
