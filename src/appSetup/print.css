@@ -23,10 +23,6 @@ print rules
         page-break-after: avoid;
     }
 
-    section[role="main"] > * {
-        page-break-before: always;
-    }
-
     table,
     figure,
     ol,
