@@ -29,7 +29,7 @@
     {% comment %}
         we display all three possible languages for zabytki
     {% endcomment %}
-    <div i-mainMenu-item>
+    <div i-mainMenu-item="full">
         <a
             href="{{ site.baseUrl }}/zabytki/de/"
             i-mainMenu-itemLabel="{% if page.category == 'zabytki' and page.language == 'de' %}selected{% endif %}"

@@ -10,9 +10,15 @@ https://cloudfour.com/thinks/building-themes-with-css4-color-features/
 urls:
 
 - /
-- /pl/zabytki
-    - /pl/zabytki/obiekt-zabytkowy-1
-    - /pl/zabytki/obiekt-zabytkowy-2
+- /zabytki/de
+    - /zabytki/de/obiekt-zabytkowy-1
+    - /zabytki/de/obiekt-zabytkowy-2
+- /zabytki/en
+    - /zabytki/en/obiekt-zabytkowy-1
+    - /zabytki/en/obiekt-zabytkowy-2
+- /zabytki/pl
+    - /zabytki/pl/obiekt-zabytkowy-1
+    - /zabytki/pl/obiekt-zabytkowy-2
 - /projekty
     - /projekty/obiekt-1
     - /projekty/obiekt-2

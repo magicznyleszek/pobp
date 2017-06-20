@@ -6,6 +6,7 @@ styles common for all themes
 @import "appSetup/reset.css";
 @import "appSetup/root.css";
 @import "appSetup/states.css";
+@import "appSetup/print.css";
 
 /* modules */
 @import "modules/mainMenu/mainMenu.css";

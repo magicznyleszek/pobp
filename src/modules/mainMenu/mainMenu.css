@@ -3,12 +3,16 @@ mainMenu module
 *******************************************************************************/
 
 [i-mainMenu] {
+    display: grid;
     box-shadow: var(--global-sh);
+    grid-auto-rows: 2rem;
+    grid-auto-flow: row;
 }
 
 @media (--smaller) {
     [i-mainMenu] {
         width: 100%;
+        grid-template-columns: auto 4rem;
     }
 }
 
@@ -17,6 +21,7 @@ mainMenu module
         float: right;
         margin-left: var(--s-leadingDouble);
         margin-bottom: var(--s-leadingDouble);
+        grid-template-columns: max-content 4rem;
     }
 }
 
@@ -42,10 +47,13 @@ mainMenu items
     box-shadow: var(--global-sh);
 }
 
+[i-mainMenu-item~="full"] {
+    grid-column: 1 / span 2;
+}
+
 [i-mainMenu-item~="logo"] {
-    float: right;
-    width: 4rem;
-    height: 4rem;
+    grid-row: 1 / span 2;
+    grid-column: 2;
 }
 
 [i-mainMenu-item~="logo"] svg {
