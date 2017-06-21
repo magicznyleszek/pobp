@@ -1,0 +1,12 @@
+---
+layout: default
+permalink: zabytki/de/
+language: de
+category: zabytki
+---
+
+{% assign zabytki=site.content_zabytki | where:"language", page.language %}
+
+{% for item in zabytki %}
+    <a href="{{ item.url }}">{{ item.title }}</a>
+{% endfor %}

@@ -34,7 +34,7 @@
             href="{{ site.baseUrl }}/zabytki/de/"
             i-mainMenu-itemLabel="{% if page.category == 'zabytki' and page.language == 'de' %}selected{% endif %}"
         >
-            {% include trans slug='monuments' language='de' %}
+            {% include trans.liquid slug='monuments' language='de' %}
         </a>
 
         /
@@ -43,7 +43,7 @@
             href="{{ site.baseUrl }}/zabytki/en/"
             i-mainMenu-itemLabel="{% if page.category == 'zabytki' and page.language == 'en' %}selected{% endif %}"
         >
-            {% include trans slug='monuments' language='en' %}
+            {% include trans.liquid slug='monuments' language='en' %}
         </a>
 
         /
@@ -52,7 +52,7 @@
             href="{{ site.baseUrl }}/zabytki/pl/"
             i-mainMenu-itemLabel="{% if page.category == 'zabytki' and page.language == 'pl' %}selected{% endif %}"
         >
-            {% include trans slug='monuments' language='pl' %}
+            {% include trans.liquid slug='monuments' language='pl' %}
         </a>
     </div>
 </menu>

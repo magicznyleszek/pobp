@@ -1,5 +1,13 @@
 {% include appSetup/templateStart.liquid %}
 
-<section role="main" i-mainContent i-mainMenuClearfix>{{ content }}</section>
+{% include modules/mainMenu/mainMenu.liquid %}
+
+<section role="main" i-mainContent i-mainMenuClearfix>
+    {% if page.disableContentMenu != true %}
+        {% include modules/contentMenu/contentMenu.liquid %}
+    {% endif %}
+
+    {{ content }}
+</section>
 
 {% include appSetup/templateEnd.liquid %}

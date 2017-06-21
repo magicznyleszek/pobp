@@ -1,4 +1,6 @@
 {
-    "building": "Gebäude",
-    "monuments": "Denkmäler"
+    "monuments": "Denkmäler",
+    "contact": "Kontakt",
+    "contactInfo": "Kontaktinformation",
+    "start": "Start"
 }

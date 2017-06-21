@@ -1,0 +1,17 @@
+<menu i-contentMenu>
+    {% capture rootUrl %}{{ site.baseUrl }}/{{ page.category }}/{{ page.language }}/{% endcapture%}
+    {% assign rootUrlSafe = rootUrl | replace: "//", "/" %}
+    <a i-contentMenu-item href="{{ rootUrlSafe }}">
+        <span i-contentMenu-itemLabel="{% if page.url == rootUrlSafe %}selected{% endif %}">
+            {% include trans.liquid slug='start' %}
+        </span>
+    </a>
+
+    {% capture contactUrl %}{{ site.baseUrl }}/{{ page.category }}/{{ page.language }}/contact/{% endcapture%}
+    {% assign contactUrlSafe = contactUrl | replace: "//", "/" %}
+    <a i-contentMenu-item href="{{ contactUrlSafe }}">
+        <span i-contentMenu-itemLabel="{% if page.url == contactUrlSafe %}selected{% endif %}">
+            {% include trans.liquid slug='contact' %}
+        </span>
+    </a>
+</menu>

@@ -9,5 +9,6 @@ styles common for all themes
 @import "appSetup/print.css";
 
 /* modules */
+@import "modules/contentMenu/contentMenu.css";
 @import "modules/mainMenu/mainMenu.css";
 @import "modules/mainContent.css";

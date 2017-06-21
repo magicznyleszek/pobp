@@ -1,6 +1,10 @@
 {% include appSetup/templateStart.liquid %}
 
+{% include modules/mainMenu/mainMenu.liquid %}
+
 <section role="main" i-mainContent i-mainMenuClearfix>
+    {% include modules/contentMenu/contentMenu.liquid %}
+
     <header i-pagetitle>
         <h1 i-pagetitle-name>{{ page.title }}</h1>
 
