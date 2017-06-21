@@ -7,6 +7,14 @@
         </span>
     </a>
 
+    {% capture listUrl %}{{ site.baseUrl }}/{{ page.category }}/{{ page.language }}/list/{% endcapture%}
+    {% assign listUrlSafe = listUrl | replace: "//", "/" %}
+    <a i-contentMenu-item href="{{ listUrlSafe }}">
+        <span i-contentMenu-itemLabel="{% if page.url == listUrlSafe %}selected{% endif %}">
+            {% include trans.liquid slug='list' %}
+        </span>
+    </a>
+
     {% capture contactUrl %}{{ site.baseUrl }}/{{ page.category }}/{{ page.language }}/contact/{% endcapture%}
     {% assign contactUrlSafe = contactUrl | replace: "//", "/" %}
     <a i-contentMenu-item href="{{ contactUrlSafe }}">

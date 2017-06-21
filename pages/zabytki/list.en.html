@@ -1,0 +1,9 @@
+---
+layout: default
+permalink: zabytki/en/list/
+language: en
+category: zabytki
+---
+
+{% assign zabytki=site.content_zabytki | where:"language", page.language %}
+{% include modules/postsList/postsList.liquid posts=zabytki %}
