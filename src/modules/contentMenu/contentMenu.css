@@ -10,7 +10,7 @@ contentMenu module
 }
 
 [i-contentMenu-item] {
-    padding: calc(var(--s-leading) * 0.5) var(--s-leading);
+    padding: var(--s-leadingHalf);
     background-color: currentColor;
     font-weight: 700;
     text-decoration-line: none;

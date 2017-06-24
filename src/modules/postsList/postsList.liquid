@@ -1,9 +1,19 @@
-<ul i-postsList>
-{% for item in include.posts %}
-    <li i-postsList-post>
-        <a href="{{ item.url }}">
-            {{ item.title }}
-        </a>
-    </li>
+<section i-postsList>
+{% assign postsSorted = include.posts | order:"date" | reverse %}
+{% assign currentYear = "1000" %}
+{% for item in postsSorted %}
+    {% assign postYear = item.date | date:"%Y" %}
+    {% if currentYear != postYear %}
+        {% assign currentYear = postYear %}
+        <time datetime="{{ currentYear }}" i-postsList-yearMark>
+            <svg><use xlink:href="#symbol-position-indicator"></svg>
+            {{ currentYear }}
+        </time>
+    {% endif %}
+    <article i-postsList-post>
+        <h1><a href="{{ item.url }}">{{ item.title }}</a></h1>
+
+        <p>{{ item.description }}</p>
+    </article>
 {% endfor %}
-</ul>
+</section>

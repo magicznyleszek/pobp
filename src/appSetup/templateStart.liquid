@@ -4,19 +4,19 @@
     theme name chooser for categories -- relies on .css files names
     defaults to "snow" if category is "projekty" or no category
 {% endcomment %}
-{% if page.category == 'kajaki' %}
-    {% assign themeName = 'persian' %}
-{% elsif page.category == 'zabytki' %}
-    {% assign themeName = 'wolf' %}
+{% if page.category == "kajaki" %}
+    {% assign themeName = "persian" %}
+{% elsif page.category == "zabytki" %}
+    {% assign themeName = "wolf" %}
 {% else %}
-    {% assign themeName = 'snow' %}
+    {% assign themeName = "snow" %}
 {% endif %}
 
 {% comment %}
     if page language is not provided we assume it is polish
 {% endcomment %}
 {% if page.language == undefined %}
-    {% assign pageLanguage = 'pl' %}
+    {% assign pageLanguage = "pl" %}
 {% else %}
     {% assign pageLanguage = page.language %}
 {% endif %}

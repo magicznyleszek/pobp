@@ -5,21 +5,21 @@ mainMenu module
 [i-mainMenu] {
     display: grid;
     box-shadow: var(--global-sh);
-    grid-auto-rows: 2rem;
+    grid-auto-rows: var(--s-leadingDouble);
     grid-auto-flow: row;
 }
 
 @media (--smaller) {
     [i-mainMenu] {
         width: 100%;
-        grid-template-columns: auto 4rem;
+        grid-template-columns: auto calc(var(--s-leadingDouble) * 2);
     }
 }
 
 @media (--mediumAndBigger) {
     [i-mainMenu] {
         float: right;
-        grid-template-columns: max-content 4rem;
+        grid-template-columns: max-content calc(var(--s-leadingDouble) * 2);
     }
 }
 
@@ -41,8 +41,9 @@ mainMenu items
 [i-mainMenu-item] {
     display: block;
     overflow: hidden;
-    padding: 0.25rem 0.5rem;
+    padding: var(--s-leadingHalf);
     box-shadow: var(--global-sh);
+    line-height: var(--s-leading);
 }
 
 [i-mainMenu-item~="full"] {

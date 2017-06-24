@@ -2,6 +2,21 @@
 postsList module
 *******************************************************************************/
 
-[i-postsList] {}
+[i-postsList] {
+    padding: var(--s-leading);
+}
 
-[i-postsList-post] {}
+[i-postsList-post] {
+    padding: var(--s-leading);
+}
+
+[i-postsList-yearMark] {
+    float: right;
+    padding: var(--s-leading);
+    color: var(--c-root-weak);
+}
+
+[i-postsList-yearMark] svg {
+    width: var(--s-leading);
+    height: var(--s-leading);
+}
