@@ -43,7 +43,7 @@ mainMenu items
 [i-mainMenu-item] {
     display: block;
     overflow: hidden;
-    padding: 0.25rem;
+    padding: 0.25rem 0.5rem;
     box-shadow: var(--global-sh);
 }
 
@@ -61,6 +61,7 @@ mainMenu items
     height: 100%;
 }
 
+[i-mainMenu-item~="selected"],
 [i-mainMenu-itemLabel~="selected"] {
     font-weight: 700;
 }

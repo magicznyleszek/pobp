@@ -2,10 +2,27 @@
 contentMenu module
 *******************************************************************************/
 
-[i-contentMenu] {}
+[i-contentMenu] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: var(--s-leadingDouble);
+}
 
-[i-contentMenu-item] {}
-
-[i-contentMenu-itemLabel~="selected"] {
+[i-contentMenu-item] {
+    padding: 0.25rem 0.5rem;
+    background-color: currentColor;
     font-weight: 700;
+    text-decoration-line: none;
+}
+
+[i-contentMenu-itemLabel] {
+    color: var(--c-root-bg);
+}
+
+[i-contentMenu-item~="selected"] {
+    background-color: var(--c-root-primary);
 }

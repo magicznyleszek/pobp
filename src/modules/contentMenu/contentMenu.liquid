@@ -1,24 +1,24 @@
 <menu i-contentMenu>
     {% capture rootUrl %}{{ site.baseUrl }}/{{ page.category }}/{{ page.language }}/{% endcapture%}
     {% assign rootUrlSafe = rootUrl | replace: "//", "/" %}
-    <a i-contentMenu-item href="{{ rootUrlSafe }}">
-        <span i-contentMenu-itemLabel="{% if page.url == rootUrlSafe %}selected{% endif %}">
+    <a i-contentMenu-item="{% if page.url == rootUrlSafe %}selected{% endif %}" href="{{ rootUrlSafe }}">
+        <span i-contentMenu-itemLabel>
             {% include trans.liquid slug='start' %}
         </span>
     </a>
 
     {% capture listUrl %}{{ site.baseUrl }}/{{ page.category }}/{{ page.language }}/list/{% endcapture%}
     {% assign listUrlSafe = listUrl | replace: "//", "/" %}
-    <a i-contentMenu-item href="{{ listUrlSafe }}">
-        <span i-contentMenu-itemLabel="{% if page.url == listUrlSafe %}selected{% endif %}">
+    <a i-contentMenu-item="{% if page.url == listUrlSafe %}selected{% endif %}" href="{{ listUrlSafe }}">
+        <span i-contentMenu-itemLabel>
             {% include trans.liquid slug='list' %}
         </span>
     </a>
 
     {% capture contactUrl %}{{ site.baseUrl }}/{{ page.category }}/{{ page.language }}/contact/{% endcapture%}
     {% assign contactUrlSafe = contactUrl | replace: "//", "/" %}
-    <a i-contentMenu-item href="{{ contactUrlSafe }}">
-        <span i-contentMenu-itemLabel="{% if page.url == contactUrlSafe %}selected{% endif %}">
+    <a i-contentMenu-item="{% if page.url == contactUrlSafe %}selected{% endif %}" href="{{ contactUrlSafe }}">
+        <span i-contentMenu-itemLabel>
             {% include trans.liquid slug='contact' %}
         </span>
     </a>

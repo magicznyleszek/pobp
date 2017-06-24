@@ -14,14 +14,14 @@
         <svg><use xlink:href="#symbol-pobp-logo-{{ logoType }}"></svg>
     </a>
 
-    <a i-mainMenu-item href="{{ site.baseUrl }}/kajaki/">
-        <span i-mainMenu-itemLabel="{% if page.category == 'kajaki' %}selected{% endif %}">
+    <a i-mainMenu-item="{% if page.category == 'kajaki' %}selected{% endif %}" href="{{ site.baseUrl }}/kajaki/">
+        <span i-mainMenu-itemLabel>
             Kajaki
         </span>
     </a>
 
-    <a i-mainMenu-item href="{{ site.baseUrl }}/projekty/">
-        <span i-mainMenu-itemLabel="{% if page.category == 'projekty' %}selected{% endif %}">
+    <a i-mainMenu-item="{% if page.category == 'projekty' %}selected{% endif %}" href="{{ site.baseUrl }}/projekty/">
+        <span i-mainMenu-itemLabel>
             Projekty
         </span>
     </a>
