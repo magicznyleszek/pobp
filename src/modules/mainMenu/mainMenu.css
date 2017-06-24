@@ -19,8 +19,6 @@ mainMenu module
 @media (--mediumAndBigger) {
     [i-mainMenu] {
         float: right;
-        margin-left: var(--s-leadingDouble);
-        margin-bottom: var(--s-leadingDouble);
         grid-template-columns: max-content 4rem;
     }
 }

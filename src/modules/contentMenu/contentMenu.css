@@ -3,17 +3,14 @@ contentMenu module
 *******************************************************************************/
 
 [i-contentMenu] {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start;
-    justify-content: flex-start;
+    display: grid;
     padding: var(--s-leadingDouble);
+    grid-auto-flow: column;
+    grid-column-gap: var(--s-leading);
 }
 
 [i-contentMenu-item] {
-    padding: 0.25rem 0.5rem;
+    padding: calc(var(--s-leading) * 0.5) var(--s-leading);
     background-color: currentColor;
     font-weight: 700;
     text-decoration-line: none;
