@@ -13,6 +13,17 @@
     <article i-postsList-post>
         <h1><a href="{{ item.url }}">{{ item.title }}</a></h1>
 
+        {% comment %}
+            these are special for "zabytki"
+        {% endcomment %}
+        {% if item.isDocumentation %}
+            Projekt dokumentacji
+        {% endif %}
+
+        {% if item.isSupervision %}
+            Nadzór wykonawczy
+        {% endif %}
+
         <p>{{ item.description }}</p>
     </article>
 {% endfor %}
