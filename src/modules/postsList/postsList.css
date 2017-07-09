@@ -14,9 +14,15 @@ postsList module
     float: right;
     padding: var(--s-leading);
     color: var(--c-root-weak);
+    font-family: var(--font-monospace);
 }
 
-[i-postsList-yearMark] svg {
+[i-postsList-yearMark-icon] {
     width: var(--s-leading);
     height: var(--s-leading);
+}
+
+[i-postsList-yearMark-icon],
+[i-postsList-yearMark-text] {
+    float: left;
 }
