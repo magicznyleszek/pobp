@@ -9,10 +9,6 @@
                 {% include trans.liquid slug='previousProject' %}
             </span>
 
-            <svg i-relatedPost-icon>
-                <use xlink:href="#symbol-thumbnail-{{ page.previous.slug }}">
-            </svg>
-
             <span i-relatedPost-title>{{ page.previous.title }}</span>
         </a>
     {% endif %}
@@ -22,10 +18,6 @@
             <span i-relatedPost-subtitle>
                 {% include trans.liquid slug='nextProject' %}
             </span>
-
-            <svg i-relatedPost-icon>
-                <use xlink:href="#symbol-thumbnail-{{ page.next.slug }}">
-            </svg>
 
             <span i-relatedPost-title>{{ page.next.title }}</span>
         </a>
