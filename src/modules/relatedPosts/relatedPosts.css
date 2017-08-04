@@ -19,6 +19,14 @@ relatedPosts module
     line-height: var(--s-leading);
 }
 
+[i-relatedPost]:only-child {
+    grid-column: 1 / span 2;
+}
+
+[i-relatedPost]:nth-child(2) {
+    text-align: right;
+}
+
 [i-relatedPost-title],
 [i-relatedPost-subtitle] {
     display: block;
