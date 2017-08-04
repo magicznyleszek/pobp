@@ -4,15 +4,16 @@ contentMenu module
 
 [i-contentMenu] {
     display: grid;
-    padding: var(--s-leadingDouble);
     grid-auto-flow: column;
     grid-column-gap: var(--s-leading);
+    padding: var(--s-leadingDouble);
 }
 
 [i-contentMenu-item] {
     padding: var(--s-leadingHalf);
     background-color: currentColor;
     text-decoration-line: none;
+    text-align: center;
 }
 
 [i-contentMenu-itemLabel] {

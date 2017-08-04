@@ -8,22 +8,22 @@ mainMenu module
 
 [i-mainMenu] {
     display: grid;
-    box-shadow: var(--global-sh);
     grid-auto-rows: var(--s-leadingDouble);
     grid-auto-flow: row;
+    box-shadow: var(--global-sh);
 }
 
 @media (--smaller) {
     [i-mainMenu] {
-        width: 100%;
         grid-template-columns: auto var(--s-mainMenu-logo-column-width);
+        width: 100%;
     }
 }
 
 @media (--mediumAndBigger) {
     [i-mainMenu] {
-        float: right;
         grid-template-columns: max-content var(--s-mainMenu-logo-column-width);
+        float: right;
     }
 }
 
