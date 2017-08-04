@@ -1,4 +1,6 @@
 {
+    "previousProject": "previous project",
+    "nextProject": "next project",
     "monuments": "monuments",
     "contact": "Contact",
     "contactInfo": "Contact information",

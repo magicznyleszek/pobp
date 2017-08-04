@@ -12,3 +12,4 @@ styles common for all themes
 @import "modules/contentMenu/contentMenu.css";
 @import "modules/mainMenu/mainMenu.css";
 @import "modules/postsList/postsList.css";
+@import "modules/relatedPosts/relatedPosts.css";

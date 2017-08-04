@@ -1,0 +1,23 @@
+/*******************************************************************************
+relatedPosts module
+*******************************************************************************/
+
+[i-relatedPosts] {
+    padding: var(--s-leading);
+}
+
+[i-relatedPost] {
+
+}
+
+[i-relatedPost-subtitle] {
+
+}
+
+[i-relatedPost-icon] {
+
+}
+
+[i-relatedPost-title] {
+
+}

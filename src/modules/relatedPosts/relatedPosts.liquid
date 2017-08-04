@@ -1,0 +1,33 @@
+{% comment %}
+    This template renders links to previous and next projects
+    NOTE: we assume at least next or previous is there
+{% endcomment %}
+<section i-relatedPosts>
+    {% if page.previous and page.previous.language == page.language %}
+        <a i-relatedPost href="{{ page.previous.url }}">
+            <span i-relatedPost-subtitle>
+                {% include trans.liquid slug='previousProject' %}
+            </span>
+
+            <svg i-relatedPost-icon>
+                <use xlink:href="#symbol-thumbnail-{{ page.previous.slug }}">
+            </svg>
+
+            <span i-relatedPost-title>{{ page.previous.title }}</span>
+        </a>
+    {% endif %}
+
+    {% if page.next and page.next.language == page.language %}
+        <a i-relatedPost href="{{ page.next.url }}">
+            <span i-relatedPost-subtitle>
+                {% include trans.liquid slug='nextProject' %}
+            </span>
+
+            <svg i-relatedPost-icon>
+                <use xlink:href="#symbol-thumbnail-{{ page.next.slug }}">
+            </svg>
+
+            <span i-relatedPost-title>{{ page.next.title }}</span>
+        </a>
+    {% endif %}
+</section>
