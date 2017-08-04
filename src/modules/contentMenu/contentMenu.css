@@ -12,12 +12,12 @@ contentMenu module
 [i-contentMenu-item] {
     padding: var(--s-leadingHalf);
     background-color: currentColor;
-    font-weight: 700;
     text-decoration-line: none;
 }
 
 [i-contentMenu-itemLabel] {
     color: var(--c-root-bg);
+    letter-spacing: 0.0313rem; /* half pixel to look prettier */
 }
 
 [i-contentMenu-item~="selected"] {

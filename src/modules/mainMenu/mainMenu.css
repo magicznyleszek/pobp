@@ -44,7 +44,6 @@ mainMenu items
 
 [i-mainMenu-item] {
     display: block;
-    overflow: hidden;
     padding: var(--s-leadingHalf);
     box-shadow: var(--global-sh);
     line-height: var(--s-leading);
