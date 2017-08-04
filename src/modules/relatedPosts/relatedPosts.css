@@ -3,21 +3,27 @@ relatedPosts module
 *******************************************************************************/
 
 [i-relatedPosts] {
-    padding: var(--s-leading);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-shadow: var(--global-sh);
+}
+
+[i-relatedPosts] a {
+    text-decoration: none;
 }
 
 [i-relatedPost] {
-
+    display: block;
+    padding: var(--s-leadingHalf);
+    box-shadow: var(--global-sh);
+    line-height: var(--s-leading);
 }
 
+[i-relatedPost-title],
 [i-relatedPost-subtitle] {
-
-}
-
-[i-relatedPost-icon] {
-
+    display: block;
 }
 
 [i-relatedPost-title] {
-
+    font-style: italic;
 }
