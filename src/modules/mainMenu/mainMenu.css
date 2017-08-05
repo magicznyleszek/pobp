@@ -65,6 +65,8 @@ mainMenu items
 }
 
 [i-mainMenu-item~="logo"] svg {
+    /* block needed as bugfix for Safari and iOS */
+    display: block;
     /* svg needs to take container padding into account */
     width: calc(var(--s-mainMenu-logo-column-width) - 2 * var(--s-leadingHalf));
     height: calc(var(--s-mainMenu-logo-column-width) - 2 * var(--s-leadingHalf));
