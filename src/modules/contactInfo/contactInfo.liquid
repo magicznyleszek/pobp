@@ -1,8 +1,10 @@
 <h1>{% include trans.liquid slug="contactInfo" %}</h1>
 
+{% assign phoneNumber = "+48 602 399 784" %}
+{% assign streetAddress = "ul. Paczkowska 32a, 60-171 Poznań, Polska" %}
+
 <address>
     Projektowanie i obsługa inwestycji budowlanych - mgr inż. Olgierd Pietrzak<br>
-    ul. Paczkowska 32/2<br>
-    60-171 Poznań, Polska<br>
-    +48 602 399 784
+    <a href="https://maps.google.com/?q={{ streetAddress }}" target="_blank">{{ streetAddress }}</a>
+    <a href="tel:{{ phoneNumber | replace " ", "" }}">{{ phoneNumber }}</a>
 </address>
