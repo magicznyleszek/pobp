@@ -9,6 +9,7 @@ styles common for all themes
 @import "appSetup/print.css";
 
 /* modules */
+@import "modules/contactinfo/contactinfo.css";
 @import "modules/contentnav/contentnav.css";
 @import "modules/rootnav/rootnav.css";
 @import "modules/allposts/allposts.css";
