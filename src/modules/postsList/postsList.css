@@ -15,28 +15,11 @@ postsList module
     padding: var(--s-leading);
     color: var(--c-root-weak);
     font-family: var(--font-monospace);
+    font-weight: 300;
 }
 
 [i-postsList-yearMark] svg {
-    fill: red;
-}
-
-[i-postslist-yearmark-icon] {
-    fill: blue;
-}
-
-svg[i-postslist-yearmark-icon] {
-    fill: green;
-}
-
-[i-postslist-yearmark-icon] {
-    /* inline-block needed as bugfix for iOS */
-    display: inline-block;
+    float: left;
     width: var(--s-leading);
     height: var(--s-leading);
-}
-
-[i-postslist-yearmark-icon],
-[i-postsList-yearMark-text] {
-    float: left;
 }

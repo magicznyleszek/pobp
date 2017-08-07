@@ -1,7 +1,5 @@
 <section i-postsList>
 
-7 <svg i-postslist-yearmark-icon><use xlink:href="#symbol-position-indicator"></svg>
-
 {% assign postsSorted = include.posts | order:"date" | reverse %}
 {% assign currentYear = "1000" %}
 {% for item in postsSorted %}
@@ -13,8 +11,8 @@
     {% if currentYear != postYear %}
         {% assign currentYear = postYear %}
         <time datetime="{{ currentYear }}" i-postsList-yearMark>
-            <svg i-postslist-yearmark-icon><use xlink:href="#symbol-position-indicator"></svg>
-            <span i-postsList-yearMark-text>{{ currentYear }}</span>
+            <svg><use xlink:href="#symbol-position-indicator"></svg>
+            {{ currentYear }}
         </time>
     {% endif %}
 
