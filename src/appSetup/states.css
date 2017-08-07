@@ -20,9 +20,7 @@ a:active { color: color(var(--c-root-primary) a(- 20%)); }
 /* text selection */
 
 :focus {
-    outline-color: var(--c-root-primary);
-    outline-style: auto;
-    outline-width: 0.25rem;
+    outline: var(--c-root-primary) auto 0.25rem;
 }
 
 ::-moz-focus-inner { border: 0; }
