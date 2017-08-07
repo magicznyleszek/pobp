@@ -18,8 +18,8 @@ postsList module
 }
 
 [i-postsList-yearMark-icon] {
-    /* block needed as bugfix for iOS */
-    display: block;
+    /* inline-block needed as bugfix for iOS */
+    display: inline-block;
     width: var(--s-leading);
     height: var(--s-leading);
 }
