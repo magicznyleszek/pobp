@@ -17,22 +17,14 @@ postsList module
     font-family: var(--font-monospace);
 }
 
-[i-postsList-yearMark] svg {
-    fill: red;
-}
-
-[i-postslist-yearmark-icon] {
-    fill: blue;
-}
-
-[i-postslist-yearmark-icon] {
+[i-postsList-yearMark-icon] {
     /* inline-block needed as bugfix for iOS */
     display: inline-block;
     width: var(--s-leading);
     height: var(--s-leading);
 }
 
-[i-postslist-yearmark-icon],
+[i-postsList-yearMark-icon],
 [i-postsList-yearMark-text] {
     float: left;
 }
