@@ -1,16 +1,16 @@
 /*******************************************************************************
-postsList module
+allposts module
 *******************************************************************************/
 
-[i-postsList] {
+[i-allposts] {
     clear: both;
 }
 
-[i-postsList-post] {
+[i-allposts-post] {
     padding: var(--s-leading);
 }
 
-[i-postsList-yearMark] {
+[i-allposts-yearmark] {
     float: right;
     clear: both;
     padding: var(--s-leading);
@@ -19,7 +19,7 @@ postsList module
     font-weight: 300;
 }
 
-[i-postsList-yearMark] svg {
+[i-allposts-yearmark] svg {
     display: block;
     margin: auto;
     width: var(--s-leading);

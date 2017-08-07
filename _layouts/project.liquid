@@ -1,9 +1,9 @@
 {% include appSetup/templateStart.liquid %}
 
-{% include modules/mainMenu/mainMenu.liquid %}
+{% include modules/rootnav/rootnav.liquid %}
 
-<section role="main" i-mainMenuClearfix>
-    {% include modules/contentMenu/contentMenu.liquid %}
+<section role="main" i-mainmenuclearfix>
+    {% include modules/contentnav/contentnav.liquid %}
 
     <header i-pagetitle>
         <h1 i-pagetitle-name>{{ page.title }}</h1>
@@ -19,7 +19,7 @@
         {{ content }}
     </section>
 
-    {% include modules/relatedPosts/relatedPosts.liquid %}
+    {% include modules/relatedposts/relatedposts.liquid %}
 </section>
 
 {% include appSetup/templateEnd.liquid %}

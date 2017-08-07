@@ -1,37 +1,37 @@
 /*******************************************************************************
-relatedPosts module
+relatedposts module
 *******************************************************************************/
 
-[i-relatedPosts] {
+[i-relatedposts] {
     display: grid;
     grid-template-columns: 50% 50%;
     box-shadow: var(--global-sh);
 }
 
-[i-relatedPosts] a {
+[i-relatedposts] a {
     text-decoration: none;
 }
 
-[i-relatedPost] {
+[i-relatedposts-post] {
     display: block;
     padding: var(--s-leadingHalf);
     box-shadow: var(--global-sh);
     line-height: var(--s-leading);
 }
 
-[i-relatedPost]:only-child {
+[i-relatedposts-post]:only-child {
     grid-column: 1 / span 2;
 }
 
-[i-relatedPost]:nth-child(2) {
+[i-relatedposts-post]:nth-child(2) {
     text-align: right;
 }
 
-[i-relatedPost-title],
-[i-relatedPost-subtitle] {
+[i-relatedposts-title],
+[i-relatedposts-subtitle] {
     display: block;
 }
 
-[i-relatedPost-title] {
+[i-relatedposts-title] {
     font-style: italic;
 }

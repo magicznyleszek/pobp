@@ -9,19 +9,19 @@
     {% assign logoType = "base" %}
 {% endif %}
 
-<menu i-mainMenu>
-    <a i-mainMenu-item="logo" href="{{ site.baseurl }}/">
+<menu i-rootnav>
+    <a i-rootnav-item="logo" href="{{ site.baseurl }}/">
         <svg><use xlink:href="#symbol-pobp-logo-{{ logoType }}"></svg>
     </a>
 
-    <a i-mainMenu-item="{% if page.category == "kajaki" %}selected{% endif %}" href="{{ site.baseUrl }}/kajaki/">
-        <span i-mainMenu-itemlabel>
+    <a i-rootnav-item="{% if page.category == "kajaki" %}selected{% endif %}" href="{{ site.baseUrl }}/kajaki/">
+        <span i-rootnav-itemlabel>
             Kajaki
         </span>
     </a>
 
-    <a i-mainMenu-item="{% if page.category == "projekty" %}selected{% endif %}" href="{{ site.baseUrl }}/projekty/">
-        <span i-mainMenu-itemlabel>
+    <a i-rootnav-item="{% if page.category == "projekty" %}selected{% endif %}" href="{{ site.baseUrl }}/projekty/">
+        <span i-rootnav-itemlabel>
             Projekty
         </span>
     </a>
@@ -29,10 +29,10 @@
     {% comment %}
         we display all three possible languages for zabytki
     {% endcomment %}
-    <div i-mainMenu-item="full">
+    <div i-rootnav-item="full">
         <a
             href="{{ site.baseUrl }}/zabytki/de/"
-            i-mainMenu-itemlabel="{% if page.category == "zabytki" and page.language == "de" %}selected{% endif %}"
+            i-rootnav-itemlabel="{% if page.category == "zabytki" and page.language == "de" %}selected{% endif %}"
         >
             {% include trans.liquid slug="monuments" language="de" %}
         </a>
@@ -41,7 +41,7 @@
 
         <a
             href="{{ site.baseUrl }}/zabytki/en/"
-            i-mainMenu-itemlabel="{% if page.category == "zabytki" and page.language == "en" %}selected{% endif %}"
+            i-rootnav-itemlabel="{% if page.category == "zabytki" and page.language == "en" %}selected{% endif %}"
         >
             {% include trans.liquid slug="monuments" language="en" %}
         </a>
@@ -50,7 +50,7 @@
 
         <a
             href="{{ site.baseUrl }}/zabytki/pl/"
-            i-mainMenu-itemlabel="{% if page.category == "zabytki" and page.language == "pl" %}selected{% endif %}"
+            i-rootnav-itemlabel="{% if page.category == "zabytki" and page.language == "pl" %}selected{% endif %}"
         >
             {% include trans.liquid slug="monuments" language="pl" %}
         </a>

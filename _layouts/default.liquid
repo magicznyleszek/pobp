@@ -1,10 +1,10 @@
 {% include appSetup/templateStart.liquid %}
 
-{% include modules/mainMenu/mainMenu.liquid %}
+{% include modules/rootnav/rootnav.liquid %}
 
-<section role="main" i-mainMenuClearfix>
+<section role="main" i-mainmenuclearfix>
     {% if page.disableContentMenu != true %}
-        {% include modules/contentMenu/contentMenu.liquid %}
+        {% include modules/contentnav/contentnav.liquid %}
     {% endif %}
 
     {{ content }}

@@ -1,4 +1,4 @@
-<section i-postsList>
+<section i-postslist>
 
 {% assign postsSorted = include.posts | order:"date" | reverse %}
 {% assign currentYear = "1000" %}
@@ -10,7 +10,7 @@
     {% assign postYear = item.date | date:"%Y" %}
     {% if currentYear != postYear %}
         {% assign currentYear = postYear %}
-        <time datetime="{{ currentYear }}" i-postsList-yearMark>
+        <time datetime="{{ currentYear }}" i-postslist-yearmark>
             <svg><use xlink:href="#symbol-position-indicator"></svg>
             {{ currentYear }}
         </time>
@@ -19,7 +19,7 @@
     {% comment %}
     a real post information with link to details
     {% endcomment %}
-    <article i-postsList-post>
+    <article i-postslist-post>
         <h1><a href="{{ item.url }}">{{ item.title }}</a></h1>
 
         {% comment %}
