@@ -16,9 +16,11 @@
   "homepage": "https://github.com/smutnyleszek/pobp",
   "scripts": {
     "start": "npm-run-all watch",
+    "test": "npm-run-all lint",
     "build": "npm-run-all dist:rebuild svg:build styles:build images:build",
     "watch": "npm-watch",
     "serve": "npm-run-all build jekyll:serve",
+    "lint": "stylelint \"src/**/*.css\"",
     "dist:rebuild": "rm -rf dist && mkdir dist",
     "styles:build": "npm-run-all styles:buildTheme1 styles:buildTheme2 styles:buildTheme3",
     "styles:buildTheme1": "postcss src/theme-persian.css -o dist/persian.css",
@@ -48,10 +50,11 @@
     "postcss-cli": "^4.1.0",
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^10.0.0",
+    "stylelint": "^8.0.0",
+    "stylelint-order": "^0.6.0",
+    "stylelint-selector-pattern": "0.0.2",
     "svgo": "^0.7.2",
     "svgshelf": "^1.0.3"
   },
-  "dependencies": {
-    "stylelint-order": "^0.6.0"
-  }
+  "dependencies": {}
 }
