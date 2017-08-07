@@ -1,0 +1,39 @@
+<section i-allposts>
+
+{% assign postsSorted = include.posts | order:"date" | reverse %}
+{% assign currentYear = "1000" %}
+{% for item in postsSorted %}
+    {% comment %}
+    create a year marker whenever date changes between posts (posts are ordered
+    by date, so it works perfectly)
+    {% endcomment %}
+    {% assign postYear = item.date | date:"%Y" %}
+    {% if currentYear != postYear %}
+        {% assign currentYear = postYear %}
+        <time datetime="{{ currentYear }}" i-allposts-yearmark>
+            <svg><use xlink:href="#symbol-position-indicator"></svg>
+            {{ currentYear }}
+        </time>
+    {% endif %}
+
+    {% comment %}
+    a real post information with link to details
+    {% endcomment %}
+    <article i-allposts-post>
+        <h1><a href="{{ item.url }}">{{ item.title }}</a></h1>
+
+        {% comment %}
+        these are special for "zabytki"
+        {% endcomment %}
+        {% if item.isDocumentation %}
+            Projekt dokumentacji
+        {% endif %}
+
+        {% if item.isSupervision %}
+            Nadzór wykonawczy
+        {% endif %}
+
+        <p>{{ item.description }}</p>
+    </article>
+{% endfor %}
+</section>

@@ -1,0 +1,58 @@
+{% comment %}
+    choose proper SVG logo for given category
+{% endcomment %}
+{% if page.category == "kajaki"%}
+    {% assign logoType = "kayak" %}
+{% elsif page.category == "zabytki" %}
+    {% assign logoType = "antique" %}
+{% else %}
+    {% assign logoType = "base" %}
+{% endif %}
+
+<menu i-rootnav>
+    <a i-rootnav-item="logo" href="{{ site.baseurl }}/">
+        <svg><use xlink:href="#symbol-pobp-logo-{{ logoType }}"></svg>
+    </a>
+
+    <a i-rootnav-item="{% if page.category == "kajaki" %}selected{% endif %}" href="{{ site.baseUrl }}/kajaki/">
+        <span i-rootnav-itemlabel>
+            Kajaki
+        </span>
+    </a>
+
+    <a i-rootnav-item="{% if page.category == "projekty" %}selected{% endif %}" href="{{ site.baseUrl }}/projekty/">
+        <span i-rootnav-itemlabel>
+            Projekty
+        </span>
+    </a>
+
+    {% comment %}
+        we display all three possible languages for zabytki
+    {% endcomment %}
+    <div i-rootnav-item="full">
+        <a
+            href="{{ site.baseUrl }}/zabytki/de/"
+            i-rootnav-itemlabel="{% if page.category == "zabytki" and page.language == "de" %}selected{% endif %}"
+        >
+            {% include trans.liquid slug="monuments" language="de" %}
+        </a>
+
+        /
+
+        <a
+            href="{{ site.baseUrl }}/zabytki/en/"
+            i-rootnav-itemlabel="{% if page.category == "zabytki" and page.language == "en" %}selected{% endif %}"
+        >
+            {% include trans.liquid slug="monuments" language="en" %}
+        </a>
+
+        /
+
+        <a
+            href="{{ site.baseUrl }}/zabytki/pl/"
+            i-rootnav-itemlabel="{% if page.category == "zabytki" and page.language == "pl" %}selected{% endif %}"
+        >
+            {% include trans.liquid slug="monuments" language="pl" %}
+        </a>
+    </div>
+</menu>

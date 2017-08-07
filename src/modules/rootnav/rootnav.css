@@ -1,0 +1,73 @@
+/*******************************************************************************
+rootnav module
+*******************************************************************************/
+
+:root {
+    --s-rootnav-logo-column-width: calc(var(--s-leadingDouble) * 2);
+}
+
+[i-rootnav] {
+    display: grid;
+    grid-auto-rows: var(--s-leadingDouble);
+    grid-auto-flow: row;
+    box-shadow: var(--global-sh);
+}
+
+@media (--smaller) {
+    [i-rootnav] {
+        grid-template-columns: auto var(--s-rootnav-logo-column-width);
+        width: 100%;
+    }
+}
+
+@media (--mediumAndBigger) {
+    [i-rootnav] {
+        grid-template-columns: max-content var(--s-rootnav-logo-column-width);
+        float: right;
+    }
+}
+
+/* clearfix for rootnav */
+[i-mainmenuclearfix]::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*******************************************************************************
+rootnav items
+*******************************************************************************/
+
+[i-rootnav] a {
+    text-decoration: none;
+}
+
+[i-rootnav-item] {
+    display: block;
+    padding: var(--s-leadingHalf);
+    box-shadow: var(--global-sh);
+    line-height: var(--s-leading);
+}
+
+[i-rootnav-item~="full"] {
+    grid-column: 1 / span 2;
+}
+
+[i-rootnav-item~="selected"],
+[i-rootnav-itemlabel~="selected"] {
+    font-weight: 700;
+}
+
+/* logo takes two columns and is a square <3 */
+[i-rootnav-item~="logo"] {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+}
+
+[i-rootnav-item~="logo"] svg {
+    /* block needed as bugfix for Safari and iOS */
+    display: block;
+    /* svg needs to take container padding into account */
+    width: calc(var(--s-rootnav-logo-column-width) - 2 * var(--s-leadingHalf));
+    height: calc(var(--s-rootnav-logo-column-width) - 2 * var(--s-leadingHalf));
+}
