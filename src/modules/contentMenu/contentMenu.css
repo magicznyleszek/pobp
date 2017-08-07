@@ -6,7 +6,7 @@ contentMenu module
     display: grid;
     grid-auto-flow: column;
     grid-column-gap: var(--s-leading);
-    padding: var(--s-leadingDouble);
+    padding: var(--s-leading);
 }
 
 [i-contentMenu-item] {
