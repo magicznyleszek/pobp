@@ -21,18 +21,18 @@ postsList module
     fill: red;
 }
 
-[i-postsList-yearMark-icon] {
+[i-postslist-yearmark-icon] {
     fill: blue;
 }
 
-[i-postsList-yearMark-icon] {
+[i-postslist-yearmark-icon] {
     /* inline-block needed as bugfix for iOS */
     display: inline-block;
     width: var(--s-leading);
     height: var(--s-leading);
 }
 
-[i-postsList-yearMark-icon],
+[i-postslist-yearmark-icon],
 [i-postsList-yearMark-text] {
     float: left;
 }
