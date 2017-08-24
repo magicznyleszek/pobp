@@ -3,8 +3,8 @@ language: pl
 title: Zespół Szkół Rolniczych w Grzybnie
 date: 2009-01-01
 description: null
-isDocumentation: true
-isSupervision: false
+labels:
+    - documentation
 ---
 
 Projekt budowlany przebudowy i rozbudowy budynków Zespołu Szkół Rolniczych w Grzybnie, 63-112 Brodnica.

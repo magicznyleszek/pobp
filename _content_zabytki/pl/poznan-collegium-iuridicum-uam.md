@@ -3,8 +3,8 @@ language: pl
 title: Collegium Iuridicum UAM w Poznaniu
 date: 2008-01-01
 description: null
-isDocumentation: true
-isSupervision: false
+labels:
+    - documentation
 ---
 
 Projekt budowlany remontu elewacji Collegium Iuridicum UAM przy ul. Święty Marcin w  Poznaniu.

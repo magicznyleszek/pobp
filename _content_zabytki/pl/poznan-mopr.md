@@ -3,8 +3,8 @@ language: pl
 title: Miejski Ośrodek Pomocy Rodzinie w Poznaniu
 date: 2006-01-01
 description: null
-isDocumentation: true
-isSupervision: false
+labels:
+    - documentation
 ---
 
 Projekt budowlany modernizacji  budynku przy ul. Wszystkich Świętych 1 w Poznaniu z przeznaczeniem dla Miejskiego Ośrodka Pomocy Rodzinie.

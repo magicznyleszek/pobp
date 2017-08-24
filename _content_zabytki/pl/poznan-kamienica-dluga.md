@@ -3,8 +3,8 @@ language: pl
 title: Remont kamienicy przy ul. Długiej w Poznaniu
 date: 2016-01-01
 description: null
-isDocumentation: true
-isSupervision: false
+labels:
+    - documentation
 ---
 
 Projekt budowlany remontu elewacji kamienicy zlokalizowanej w Poznaniu przy ul. Długa 12 / ul. Półwiejska 13.

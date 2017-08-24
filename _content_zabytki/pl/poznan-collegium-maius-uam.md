@@ -3,8 +3,8 @@ language: pl
 title: Collegium Maius UAM w Poznaniu
 date: 2008-01-01
 description: null
-isDocumentation: true
-isSupervision: false
+labels:
+    - documentation
 ---
 
 Projekt budowlany remontu dziedzińca wewnętrznego wraz z tynkami elewacji Collegium Maius przy ul. Fredry 10 w Poznaniu.

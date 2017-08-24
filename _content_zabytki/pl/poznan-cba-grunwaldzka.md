@@ -3,8 +3,8 @@ language: pl
 title: Biuro CBA przy ul. Grunwaldzkiej w Poznaniu
 date: 2009-01-01
 description: null
-isDocumentation: true
-isSupervision: false
+labels:
+    - documentation
 ---
 
 Projekt budowlano-wykonawczy remontu i przebudowy budynku przy ul. Grunwaldzkiej 52 w Poznaniu z funkcji mieszkaniowo-usługowej na funkcję biurową.

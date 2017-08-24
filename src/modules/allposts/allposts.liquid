@@ -1,7 +1,7 @@
 <section i-allposts>
 
 {% assign postsSorted = include.posts | order:"date" | reverse %}
-{% assign currentYear = "1000" %}
+{% assign currentYear = null %}
 {% for item in postsSorted %}
     {% comment %}
     create a year marker whenever date changes between posts (posts are ordered
@@ -22,16 +22,9 @@
     <article i-allposts-post>
         <h1><a href="{{ item.url }}">{{ item.title }}</a></h1>
 
-        {% comment %}
-        these are special for "zabytki"
-        {% endcomment %}
-        {% if item.isDocumentation %}
-            Projekt dokumentacji
-        {% endif %}
-
-        {% if item.isSupervision %}
-            Nadzór wykonawczy
-        {% endif %}
+        {% for label in item.labels %}
+            <span i-allposts-postlabel>{% include trans.liquid slug=label %}</span>
+        {% endfor %}
 
         <p>{{ item.description }}</p>
     </article>

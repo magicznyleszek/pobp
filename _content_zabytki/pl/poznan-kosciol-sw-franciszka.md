@@ -3,8 +3,8 @@ language: pl
 title: Kościół p.w. Św. Franciszka z Asyżu i kaplica Matki Bożej Loretańskiej w Poznaniu
 date: 2014-01-01
 description: null
-isDocumentation: true
-isSupervision: false
+labels:
+    - documentation
 ---
 
 Projekt budowlany zabezpieczenia przeciwwilgociowego murów kościoła p.w.  Św. Franciszka z Asyżu  oraz murów kaplicy Matki Bożej Loretańskiej w Poznaniu.

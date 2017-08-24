@@ -3,8 +3,8 @@ language: pl
 title: Instytut Orientalistyki UAM w Poznaniu
 date: 2007-01-01
 description: null
-isDocumentation: true
-isSupervision: false
+labels:
+    - documentation
 ---
 
 Projekt budowlany modernizacji  budynku przy ul. 28 Czerwca 1956 roku nr 188 w Poznaniu z przeznaczeniem dla Instytutu Orientalistyki UAM w Poznaniu.

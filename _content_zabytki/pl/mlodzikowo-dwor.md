@@ -3,8 +3,8 @@ language: pl
 title: Dwór w Młodzikowie
 date: 2014-01-01
 description: null
-isDocumentation: true
-isSupervision: false
+labels:
+    - documentation
 ---
 
 Projekt budowlany niezbędnych robót interwencyjnych dworu w Młodzikowie.

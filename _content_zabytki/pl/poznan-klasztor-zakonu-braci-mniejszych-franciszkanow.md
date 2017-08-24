@@ -3,8 +3,8 @@ language: pl
 title: Klasztoru Zakonu Braci Mniejszych - Franciszkanów w Poznaniu
 date: 2016-01-01
 description: null
-isDocumentation: false
-isSupervision: true
+labels:
+    - supervision
 ---
 
 Remont Klasztoru Zakonu Braci Mniejszych - Franciszkanów w Poznaniu przy ul. Garbary 22 - - funkcja inspektora nadzoru inwestorskiego.

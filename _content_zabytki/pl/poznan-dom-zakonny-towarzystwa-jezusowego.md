@@ -3,8 +3,8 @@ language: pl
 title: Dom Zakonny Towarzystwa Jezusowego w Poznaniu
 date: 2012-01-01
 description: null
-isDocumentation: true
-isSupervision: false
+labels:
+    - documentation
 ---
 
 Projekt budowlany rozbudowy budynku oficyny wewnętrznej  Domu Zakonnego Towarzystwa Jezusowego w Poznaniu przy ul. Szewskiej 18.

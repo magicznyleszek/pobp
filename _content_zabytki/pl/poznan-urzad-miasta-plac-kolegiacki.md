@@ -3,8 +3,8 @@ language: pl
 title: Urząd miasta na pl. Kolegiackim w Poznaniu
 date: 2005-01-01
 description: null
-isDocumentation: true
-isSupervision: false
+labels:
+    - documentation
 ---
 
 Projekt budowlany remontu pomieszczeń biurowych i ciągów komunikacyjnych położonych na II, III, IV i V piętrze segmentu "A" budynku Urzędu m. Poznania, w Poznaniu na pl. Kolegiackim 17.

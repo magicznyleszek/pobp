@@ -3,8 +3,8 @@ language: pl
 title: Zamek Książąt Pomorskich w Szczecinku
 date: 2013-01-01
 description: null
-isDocumentation: false
-isSupervision: true
+labels:
+    - supervision
 ---
 
 Odrestaurowanie zabytkowego skrzydła Zamku Książąt Pomorskich w Szczecinku z przeznaczeniem na Centrum Kongresowo-Szkoleniowe - funkcja kierownika budowy.

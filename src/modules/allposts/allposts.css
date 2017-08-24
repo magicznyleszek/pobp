@@ -10,6 +10,11 @@ allposts module
     padding: var(--s-leading);
 }
 
+[i-allposts-postlabel] {
+    display: inline-block;
+    background-color: var(--c-root-weak);
+}
+
 [i-allposts-yearmark] {
     float: right;
     clear: both;

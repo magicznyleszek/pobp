@@ -3,8 +3,9 @@ language: pl
 title: Kościół p.w. Najświętszego Serca Pana Jezusa i Matki Bożej Pocieszenia w Poznaniu
 date: 2016-01-01
 description: null
-isDocumentation: true
-isSupervision: true
+labels:
+    - documentation
+    - supervision
 ---
 
 Projekt budowlany zabezpieczenia przeciwwilgociowego murów kościoła p.w. Najświętszego Serca Pana Jezusa i Matki Bożej Pocieszenia  w Poznaniu.

@@ -3,8 +3,8 @@ language: pl
 title: Dach Akademii Ekonomicznej w Poznaniu
 date: 2008-01-01
 description: null
-isDocumentation: true
-isSupervision: false
+labels:
+    - documentation
 ---
 
 Projekt remontu dachu budynku Akademii Ekonomicznej przy al. Niepodległości 12 w Poznaniu.
