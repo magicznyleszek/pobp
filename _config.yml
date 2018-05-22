@@ -9,8 +9,8 @@ keywords: "wip"
 author: "Leszek Pietrzak"
 
 # address settings
-rootSiteUrl: "http://smutnyleszek.com"
-baseurl: "http://pobp.smutnyleszek.com"
+rootSiteUrl: "http://magicznyleszek.xyz"
+baseurl: "http://pobp.magicznyleszek.xyz"
 permalink: /projects/:title
 imagesPath: "/dist/images/"
 

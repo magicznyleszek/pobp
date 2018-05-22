@@ -5,15 +5,15 @@
   "description": "WIP",
   "repository": {
     "type": "git",
-    "url": "https://github.com/smutnyleszek/pobp.git"
+    "url": "https://github.com/magicznyleszek/pobp.git"
   },
   "author": "Leszek Pietrzak",
   "license": "CC0 4.0 BY-NC-ND",
   "bugs": {
-    "url": "https://github.com/smutnyleszek/pobp/issues",
-    "email": "smutnyleszek@gmail.com"
+    "url": "https://github.com/magicznyleszek/pobp/issues",
+    "email": "leszek@magicznyleszek.xyz"
   },
-  "homepage": "https://github.com/smutnyleszek/pobp",
+  "homepage": "https://github.com/magicznyleszek/pobp",
   "scripts": {
     "start": "npm-run-all watch",
     "test": "npm-run-all lint",
