@@ -1,6 +1,6 @@
 # POBP
 
-WIP
+An idea for visual differentiating completely separate parts of a website by using the same pallete of colors to build a theme for each.
 
 ## Development
 
